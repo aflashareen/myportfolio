@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Aw2Eg6qo53-1kJerx",
+      });
+   })();
+</script>
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <body>
@@ -112,12 +122,12 @@
                        <div class="lcontent"> 
                             <form action="">
                                <label for="name">Name:</label>
-                               <input type="text" placeholder="Please Enter Your Name.">
+                               <input id="name" type="text" placeholder="Please Enter Your Name.">
                                <label for="email">Email:</label>
-                               <input type="email" name="" id="email" placeholder="Please Enter Your Email.">
+                               <input id="email" type="email" name="" id="email" placeholder="Please Enter Your Email.">
                                <label for="message">Message:</label>
-                               <input class="msg" type="text" placeholder="Send a message.....">
-                               <button class="btn2" type="submit">Send Message</button>
+                               <input id="message" class="msg" type="text" placeholder="Send a message.....">
+                               <button class="btn2" type="button" onclick="sendEmail()" >Send Message</button>
                             </form>
                         </div>    
                     </div>
@@ -171,5 +181,6 @@
             </div>    
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
