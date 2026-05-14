@@ -270,7 +270,7 @@ input{
     height: 50px;
     width: 450px;
 }
-.msg{
+#message{
     width: 450px;
     height: 80px;
     margin-bottom: 50px;
@@ -377,16 +377,16 @@ input{
    }
    .scontent{
     font-size: 20px;
-    margin-left: 130px;
-    margin-top: 50px;
+    margin-left: 100px;
+    margin-top: 25px;
    }
    h2{
     margin-left: 90px;
    }
    .pcontent{
-    margin-left: 20px;
+    margin-left: 15px;
     font-size: 19px;
-    width: 450px;
+    width: 390px;
     height: 400px;
     gap: 10px;
    }
@@ -476,5 +476,18 @@ input{
    } 
    .contacts h2{
     margin-left: 100px;
+   }
+   #message{
+    width: 150px;
+    margin-bottom: 10px;
+    height: 40px;
+   }
+   .lbg{
+    margin-left: 29px;
+    width: 360px;
+   }
+   .rbg{
+    margin-left: 29px;
+    width: 360px;
    }
 }
